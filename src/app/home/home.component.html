@@ -1,0 +1,111 @@
+<!-- home.component.html -->
+
+<div class="container">
+  <h2>Heart Health Assessment Form</h2>
+  <form>
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number"
+     id="age"
+     (ngModel)="healthData.Age"/>
+
+    <!-- Sex_Male -->
+    <label for="sexMale">Sex (Male):</label>
+    <input type="number" id="sexMale" (ngModel)="healthData.Sex_Male"/>
+
+    <!-- Cholesterol -->
+    <label for="cholesterol">Cholesterol:</label>
+    <input type="number" id="cholesterol" (ngModel)="healthData.Cholesterol"/>
+
+    <!-- Systolic Pressure -->
+    <label for="systolicPressure">Systolic Pressure:</label>
+    <input type="number" id="systolicPressure" (ngModel)="healthData.SystolicPressure"/>
+
+    <!-- Diastolic Pressure -->
+    <label for="diastolicPressure">Diastolic Pressure:</label>
+    <input type="number" id="diastolicPressure" (ngModel)="healthData.DiastolicPressure"/>
+
+    <!-- Heart Rate -->
+    <label for="heartRate">Heart Rate:</label>
+    <input type="number" id="heartRate" (ngModel)="healthData.HeartRate"/>
+
+    <!-- Diabetes_Si -->
+    <label for="diabetesSi">Diabetes (Si):</label>
+    <input type="number" id="diabetesSi" (ngModel)="healthData.Diabetes_Si"/>
+
+    <!-- Family History_Si -->
+    <label for="familyHistorySi">Family History (Si):</label>
+    <input type="number" id="familyHistorySi" (ngModel)="healthData.FamilyHistory_Si"/>
+
+    <!-- Smoking_Si -->
+    <label for="smokingSi">Smoking (Si):</label>
+    <input type="number" id="smokingSi" (ngModel)="healthData.Smoking_Si"/>
+
+    <!-- Obesity_Si -->
+    <label for="obesitySi">Obesity (Si):</label>
+    <input type="number" id="obesitySi" (ngModel)="healthData.Obesity_Si"/>
+
+    <!-- Alcohol Consumption_Moderate -->
+    <label for="alcoholModerate">Alcohol Consumption (Moderate):</label>
+    <input type="number" id="alcoholModerate" (ngModel)="healthData.AlcoholConsumption_Moderate"/>
+
+    <!-- Exercise Hours Per Week -->
+    <label for="exerciseHours">Exercise Hours Per Week:</label>
+    <input type="number" id="exerciseHours" (ngModel)="healthData.ExerciseHoursPerWeek"/>
+
+    <!-- Diet_Balanced -->
+    <label for="dietBalanced">Diet (Balanced):</label>
+    <input type="number" id="dietBalanced" (ngModel)="healthData.Diet_Balanced"/>
+
+    <!-- Previous Heart Problems_Si -->
+    <label for="previousHeartProblemsSi">Previous Heart Problems (Si):</label>
+    <input type="number" id="previousHeartProblemsSi" (ngModel)="healthData.PreviousHeartProblems_Si"/>
+
+    <!-- Medication Use_No -->
+    <label for="medicationNo">Medication Use (No):</label>
+    <input type="number" id="medicationNo" (ngModel)="healthData.MedicationUse_No"/>
+
+    <!-- Stress Level_Low -->
+    <label for="stressLow">Stress Level (Low):</label>
+    <input type="number" id="stressLow" (ngModel)="healthData.StressLevel_Low"/>
+
+    <!-- Sedentary Hours Per Day -->
+    <label for="sedentaryHours">Sedentary Hours Per Day:</label>
+    <input type="number" id="sedentaryHours" (ngModel)="healthData.SedentaryHoursPerDay"/>
+
+    <!-- Income -->
+    <label for="income">Income:</label>
+    <input type="number" id="income" (ngModel)="healthData.Income">
+
+    <!-- BMI -->
+    <label for="bmi">BMI:</label>
+    <input type="number" id="bmi" (ngModel)="healthData.BMI"/>
+
+    <!-- Triglycerides -->
+    <label for="triglycerides">Triglycerides:</label>
+    <input type="number" id="triglycerides" (ngModel)="healthData.Triglycerides"/>
+
+    <!-- Physical Activity Days Per Week -->
+    <label for="physicalActivityDays">Physical Activity Days Per Week:</label>
+    <input type="number" id="physicalActivityDays" (ngModel)="healthData.PhysicalActivityDaysPerWeek"/>
+
+    <!-- Sleep Hours Per Day -->
+    <label for="sleepHours">Sleep Hours Per Day:</label>
+    <input type="number" id="sleepHours" (ngModel)="healthData.SleepHoursPerDay"/>
+
+    <!-- Country_Your Country -->
+    <label for="country">Country (Your Country):</label>
+    <input type="number" id="country" (ngModel)="healthData.Country_YourCountry"/>
+
+    <!-- Continent_Your Continent -->
+    <label for="continent">Continent (Your Continent):</label>
+    <input type="number" id="continent" (ngModel)="healthData.Continent_YourContinent"/>
+
+    <!-- Hemisphere_North -->
+    <label for="hemisphere">Hemisphere (North):</label>
+    <input type="number" id="hemisphere" (ngModel)="healthData.Hemisphere_North"/>
+
+    <!-- Botón de envío -->
+    <button (click)="sendForm()">Submit</button>
+  </form>
+</div>

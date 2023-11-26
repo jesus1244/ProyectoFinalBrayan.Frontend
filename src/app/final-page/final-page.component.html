@@ -1,0 +1,17 @@
+<!-- card.component.html -->
+
+<div class="card">
+    <div class="card-header">
+      <h2>Results</h2>
+    </div>
+    <div class="card-body">
+      <p *ngIf="!admin">Role: Comun</p>
+      <p *ngIf="admin">Role: Admin</p>
+      <p>Other info: {{ response.other_info }}</p>
+      <p>Probability: {{ response.probability }}</p>
+      <p>Transaction Id: {{ response.transaction_id }}</p>
+      <button class="btn" (click)="logout()">Logout</button>
+      <button class="btn" (click)="exportToPDF()" *ngIf="admin">Export to PDF</button>
+    </div>
+  </div>
+  
